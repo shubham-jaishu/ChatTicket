@@ -6,9 +6,13 @@ import Link from 'next/link';
 import { signInWithGoogle } from "../../config/OAuthLogin"
 import { assets } from '@/assets/assets';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 
 const Signup = () => {
+
+  const router = useRouter()
+
   return (
     <div className="wrapper w-full h-screen bg-white">
       <div className="content h-[570px] flex flex-col justify-between">
@@ -21,7 +25,7 @@ const Signup = () => {
           <input type="password" placeholder="Password" name="password" required />
           <input type="submit" value="Create" className='mt-3' />
           <div >
-            <button className='flex justify-center items-center w-full gap-x-2 bg-white hover:bg-slate-100 rounded-md p-2 mt-4' onClick={signInWithGoogle}><Image src={assets.google} alt='Google_icon' id='icon'></Image>Signin with Google</button>
+            <button className='flex justify-center items-center w-full gap-x-2 bg-white hover:bg-slate-100 rounded-md p-2 mt-4' onClick={() => {signInWithGoogle(router)}}><Image src={assets.google} alt='Google_icon' id='icon'></Image>Signin with Google</button>
           </div>
           <Link href="/login" className='mt-2'>Already have account</Link>
         </form>
