@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.17.1",
+    "@types/firebase": "^3.2.1",
     "dotenv": "^16.4.5",
     "firebase": "^10.13.1",
     "next": "14.2.6",
