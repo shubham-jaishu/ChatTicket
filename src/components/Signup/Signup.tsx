@@ -13,6 +13,11 @@ const Signup = () => {
 
   const router = useRouter()
 
+  const handleLogin = () => {
+    console.log("login");
+    router.push("/")
+}
+
   return (
     <div className="wrapper w-full h-screen bg-white">
       <div className="content h-[570px] flex flex-col justify-between">
@@ -23,11 +28,11 @@ const Signup = () => {
           <input type="number" placeholder="Age" name="age" required />
           <input type="email" placeholder="Email" name="email" required />
           <input type="password" placeholder="Password" name="password" required />
-          <input type="submit" value="Create" className='mt-3' />
+          <input type="submit" value="Create" className='mt-3' onClick={() => handleLogin()} />
           <div >
             <button className='flex justify-center items-center w-full gap-x-2 bg-white hover:bg-slate-100 rounded-md p-2 mt-4' onClick={() => {signInWithGoogle(router)}}><Image src={assets.google} alt='Google_icon' id='icon'></Image>Signin with Google</button>
           </div>
-          <Link href="/login" className='mt-2'>Already have account</Link>
+          <Link href="/login" className='mt-3'>Already have account</Link>
         </form>
       </div>
     </div>

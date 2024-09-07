@@ -3,8 +3,6 @@
 import { auth, googleProvider } from './fireBaseOA';
 import { signInWithPopup } from 'firebase/auth';
 
-
-
 export const signInWithGoogle = async (router: any) => {
   
   try {
