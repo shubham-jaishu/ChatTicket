@@ -10,7 +10,8 @@ import { useRouter } from 'next/navigation';
 
 const Login = () => {
 
-    const router = useRouter()
+    const router = useRouter();
+    
 
     return (
         <div className="wrapper w-full h-screen bg-white">
