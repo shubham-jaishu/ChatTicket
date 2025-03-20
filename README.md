@@ -90,12 +90,12 @@ The chatbot is trained on a custom model and provides:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/sih-chatbot-ticketing.git
+   git clone https://github.com/shubham-jaishu/ChatTicket.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd sih-chatbot-ticketing
+   cd ChatTicket
    ```
 
 3. Install dependencies:
